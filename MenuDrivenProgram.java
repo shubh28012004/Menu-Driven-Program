@@ -23,23 +23,23 @@ public class MenuDrivenProgram {
                     break;
 
                 case 2:
-                    printNumberTable();
+                    printNumberTable(scanner);
                     break;
 
                 case 3:
-                    calculateSumOfDigits();
+                    calculateSumOfDigits(scanner);
                     break;
 
                 case 4:
-                    checkSpyNumber();
+                    checkSpyNumber(scanner);
                     break;
 
                 case 5:
-                    printWordAndLineTogether();
+                    printWordAndLineTogether(scanner);
                     break;
 
                 case 6:
-                    reverseString();
+                    reverseString(scanner);
                     break;
 
                 case 7:
@@ -53,8 +53,7 @@ public class MenuDrivenProgram {
         }
     }
 
-    public static void printNumberTable() {
-        Scanner scanner = new Scanner(System.in);
+    public static void printNumberTable(Scanner scanner) {
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
 
@@ -64,8 +63,7 @@ public class MenuDrivenProgram {
         }
     }
 
-    public static void calculateSumOfDigits() {
-        Scanner scanner = new Scanner(System.in);
+    public static void calculateSumOfDigits(Scanner scanner) {
         System.out.print("Enter a number: ");
         int num = scanner.nextInt();
 
@@ -81,8 +79,7 @@ public class MenuDrivenProgram {
         System.out.println("Sum of digits in " + originalNum + " is: " + sum);
     }
 
-    public static void checkSpyNumber() {
-        Scanner scanner = new Scanner(System.in);
+    public static void checkSpyNumber(Scanner scanner) {
         System.out.print("Enter a number: ");
         int num = scanner.nextInt();
 
@@ -104,8 +101,7 @@ public class MenuDrivenProgram {
         }
     }
 
-    public static void printWordAndLineTogether() {
-        Scanner scanner = new Scanner(System.in);
+    public static void printWordAndLineTogether(Scanner scanner) {
         System.out.print("Enter a word: ");
         String word = scanner.next();
         scanner.nextLine(); // Consume the newline character
@@ -115,8 +111,7 @@ public class MenuDrivenProgram {
         System.out.println(word + " " + line);
     }
 
-    public static void reverseString() {
-        Scanner scanner = new Scanner(System.in);
+    public static void reverseString(Scanner scanner) {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
